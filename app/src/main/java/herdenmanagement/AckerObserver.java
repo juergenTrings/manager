@@ -2,7 +2,6 @@ package herdenmanagement;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -10,10 +9,8 @@ import android.widget.Button;
 import de.ba.herdenmanagement.R;
 import herdenmanagement.model.Position;
 
-
 import herdenmanagement.model.Acker;
 import herdenmanagement.model.Rindvieh;
-import herdenmanagement.model.SchnitzelRind;
 import herdenmanagement.view.AckerView;
 
 public class AckerObserver implements View.OnTouchListener {
