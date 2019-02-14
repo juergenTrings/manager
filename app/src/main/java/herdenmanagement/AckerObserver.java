@@ -34,9 +34,11 @@ public class AckerObserver implements View.OnTouchListener {
         if(v instanceof AckerView){
             AckerView ackerView = (AckerView) v;
             Acker acker = ackerView.getAcker();
-            Position FeldPos = feldSuchen(event.getX(), event.getY(), ackerView);
-            acker.getViecher().get(0).setzePosition(FeldPos);
-            buttonStatus(ackerView);
+            if(acker.getViecher().size() == 1){
+                Position FeldPos = feldSuchen(event.getX(), event.getY(), ackerView);
+                acker.getViecher().get(0).setzePosition(FeldPos);
+                buttonStatus(ackerView);
+            }
         }
     }
 
@@ -51,40 +53,43 @@ public class AckerObserver implements View.OnTouchListener {
     private void buttonStatus(AckerView v) {
         View rootView = v.getRootView();
         Activity c = (Activity) v.getContext();
-
-        final Button buttonMilch = rootView.findViewById(R.id.milchBtn);
-        final Button buttonGras = rootView.findViewById(R.id.grasBtn);
-        final Button buttonRauch = rootView.findViewById(R.id.rauchBtn);
         Acker acker = v.getAcker();
         Rindvieh kuh = acker.getViecher().get(0);
-        // Rauchbutton
-        if (acker.istDaGras(kuh.gibPosition())) {
-            c.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    buttonGras.setVisibility(View.VISIBLE);
-                    buttonRauch.setVisibility(View.VISIBLE);
-                    buttonMilch.setVisibility(View.INVISIBLE);
-                }
-            });
-        } else if (acker.istDaEinEimer(kuh.gibPosition())) {
-            c.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    buttonMilch.setVisibility(View.VISIBLE);
-                    buttonGras.setVisibility(View.INVISIBLE);
-                    buttonRauch.setVisibility(View.INVISIBLE);
-                }
-            });
-        } else {
-            c.runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    buttonMilch.setVisibility(View.INVISIBLE);
-                    buttonGras.setVisibility(View.INVISIBLE);
-                    buttonRauch.setVisibility(View.INVISIBLE);
-                }
-            });
+        if(acker.getViecher().size() == 1){
+            final Button buttonMilch = rootView.findViewById(R.id.milchBtn);
+            final Button buttonGras = rootView.findViewById(R.id.grasBtn);
+            final Button buttonRauch = rootView.findViewById(R.id.rauchBtn);
+
+            // Rauchbutton
+            if (acker.istDaGras(kuh.gibPosition())) {
+                c.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        buttonGras.setVisibility(View.VISIBLE);
+                        buttonRauch.setVisibility(View.VISIBLE);
+                        buttonMilch.setVisibility(View.INVISIBLE);
+                    }
+                });
+            } else if (acker.istDaEinEimer(kuh.gibPosition())) {
+                c.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        buttonMilch.setVisibility(View.VISIBLE);
+                        buttonGras.setVisibility(View.INVISIBLE);
+                        buttonRauch.setVisibility(View.INVISIBLE);
+                    }
+                });
+            } else {
+                c.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        buttonMilch.setVisibility(View.INVISIBLE);
+                        buttonGras.setVisibility(View.INVISIBLE);
+                        buttonRauch.setVisibility(View.INVISIBLE);
+                    }
+                });
+            }
         }
+
     }
 }

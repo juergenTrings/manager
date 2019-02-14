@@ -107,6 +107,10 @@ public class HerdenManager {
 
         vera = new Rindvieh("Schmois");
         buttonKuh = mainActivity.findViewById(R.id.kuhBtn);
+        buttonMilch = mainActivity.findViewById(R.id.milchBtn);
+        buttonGras = mainActivity.findViewById(R.id.grasBtn);
+        buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
+
         buttonKuh.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -120,30 +124,27 @@ public class HerdenManager {
                 }
         );
 
-
-        buttonGras = mainActivity.findViewById(R.id.grasBtn);
         buttonGras.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v){
                         vera.frissGras();
                         v.setVisibility(View.INVISIBLE);
+                        buttonRauchen.setVisibility(View.INVISIBLE);
                     }
                 }
         );
 
-        buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
         buttonRauchen.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v){
                         vera.raucheGras();
                         v.setVisibility(View.INVISIBLE);
+                        buttonGras.setVisibility(View.INVISIBLE);
                     }
                 }
         );
-
-        buttonMilch = mainActivity.findViewById(R.id.milchBtn);
         buttonMilch.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
