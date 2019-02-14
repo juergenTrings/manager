@@ -4,18 +4,18 @@ ADDED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/Androi
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml:2:1-28:12
-MERGED from [com.android.support:design:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/30fc3c6c1409854e0f9e08ff0922aab9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:design:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e7f51db5dafeaf6ae0dd5a73d676afb2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/theo/.gradle/caches/transforms-2/files-2.1/de9d92749d2c52080069d7d26fee7dba/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/ea3c82e6dd07156c7813196ec73515b8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/bafcdc8c3a31a07fd2c60995e493b9e3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dcb1463ed04b0400f154e2e77a994a32/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dd6c83d69eca6efb8680232401d3cbec/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/57d8023acaef86b40a8a8bee0a34a21f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/69fc6d1ba7ce9d59daf48d82c742b165/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/a81f44108bd91c886ce0c227731af4fb/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/9ca881ad5cfaf5dab6a1942ae6079347/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/4555c06cfb6d7ba24883dbef872aa85c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/a30a39bfd0c7cb8f38f7e791edc7b9d3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/eec51abcf53ef4d34c1c2df32159dfbd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/30c9fb5ba3215d26de99ad5857cd0ead/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/feecbca4bce33b1d55510fb47d6884f4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e6880e9db1acc5bd3f4bb13c42741111/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/d5c81f2dc50237d6bb27988efad7d9d2/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/03cfc3e332ce1df1e7e9ea4c17fdea91/AndroidManifest.xml:17:1-22:12
@@ -86,30 +86,30 @@ uses-sdk
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml
 INJECTED from /Users/theo/AndroidStudioProjects/Manager/manager/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/30fc3c6c1409854e0f9e08ff0922aab9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/30fc3c6c1409854e0f9e08ff0922aab9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e7f51db5dafeaf6ae0dd5a73d676afb2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e7f51db5dafeaf6ae0dd5a73d676afb2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/theo/.gradle/caches/transforms-2/files-2.1/de9d92749d2c52080069d7d26fee7dba/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/theo/.gradle/caches/transforms-2/files-2.1/de9d92749d2c52080069d7d26fee7dba/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/ea3c82e6dd07156c7813196ec73515b8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/ea3c82e6dd07156c7813196ec73515b8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/bafcdc8c3a31a07fd2c60995e493b9e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/bafcdc8c3a31a07fd2c60995e493b9e3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dcb1463ed04b0400f154e2e77a994a32/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dcb1463ed04b0400f154e2e77a994a32/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dd6c83d69eca6efb8680232401d3cbec/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/dd6c83d69eca6efb8680232401d3cbec/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/57d8023acaef86b40a8a8bee0a34a21f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/57d8023acaef86b40a8a8bee0a34a21f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/69fc6d1ba7ce9d59daf48d82c742b165/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/69fc6d1ba7ce9d59daf48d82c742b165/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/a81f44108bd91c886ce0c227731af4fb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/a81f44108bd91c886ce0c227731af4fb/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/9ca881ad5cfaf5dab6a1942ae6079347/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/9ca881ad5cfaf5dab6a1942ae6079347/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/4555c06cfb6d7ba24883dbef872aa85c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/4555c06cfb6d7ba24883dbef872aa85c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/a30a39bfd0c7cb8f38f7e791edc7b9d3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/a30a39bfd0c7cb8f38f7e791edc7b9d3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/eec51abcf53ef4d34c1c2df32159dfbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/eec51abcf53ef4d34c1c2df32159dfbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/30c9fb5ba3215d26de99ad5857cd0ead/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/30c9fb5ba3215d26de99ad5857cd0ead/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/feecbca4bce33b1d55510fb47d6884f4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/feecbca4bce33b1d55510fb47d6884f4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e6880e9db1acc5bd3f4bb13c42741111/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/theo/.gradle/caches/transforms-2/files-2.1/e6880e9db1acc5bd3f4bb13c42741111/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/theo/.gradle/caches/transforms-2/files-2.1/d5c81f2dc50237d6bb27988efad7d9d2/AndroidManifest.xml:20:5-44

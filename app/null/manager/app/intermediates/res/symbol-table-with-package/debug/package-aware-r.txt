@@ -985,6 +985,7 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id time
+id titelBar
 id title
 id titleDividerNoCustom
 id title_template
@@ -1134,6 +1135,7 @@ string rindvieh_nix_zu_rauchen
 string rindvieh_vor_mir_kein_acker
 string search_menu_title
 string status_bar_notification_info_overflow
+string titel
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
