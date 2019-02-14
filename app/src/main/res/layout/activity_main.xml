@@ -56,9 +56,8 @@
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
         android:elevation="4dp"
-        android:text="@string/kuhBtn"
-        android:textOff="@string/kuhBtn_off"
-        android:textOn="@string/kuhBtn_on"
+        android:text="@string/kuhBtn_off"
+        android:textAlignment="center"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +65,7 @@
 
     <Button
         android:id="@+id/milchBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
@@ -81,7 +80,7 @@
 
     <Button
         android:id="@+id/rauchBtn"
-        android:layout_width="134dp"
+        android:layout_width="160dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -99,7 +98,7 @@
     <Button
         android:id="@+id/grasBtn"
         style="@android:style/Widget.Material.Button"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"

@@ -13,6 +13,6 @@ public class SchnitzelAcker extends Acker {
         if(pos != -1){
             viecher.remove(pos);
         }
-
+        informiereBeobachter(PROPERTY_VIECHER, rind, null);
     }
 }

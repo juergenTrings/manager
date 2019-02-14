@@ -117,8 +117,10 @@ public class HerdenManager {
                     public void onClick(View v){
                          if(buttonKuh.isChecked()){
                                 acker.lassRindWeiden(vera);
+                                buttonKuh.setText(R.string.kuhBtn_on);
                          } else {
                                 acker.lassRindVerschwinden(vera);
+                                buttonKuh.setText(R.string.kuhBtn_off);
                          }
                     }
                 }
