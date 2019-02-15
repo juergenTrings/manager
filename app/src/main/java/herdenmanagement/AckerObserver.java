@@ -1,7 +1,5 @@
 package herdenmanagement;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -11,14 +9,15 @@ import herdenmanagement.model.Position;
 
 import herdenmanagement.model.Acker;
 import herdenmanagement.model.Rindvieh;
-import herdenmanagement.model.SchnitzelAcker;
 import herdenmanagement.view.AckerView;
 
-public class AckerObserver implements View.OnTouchListener {
+/**
+ * Die Klasse überwacht den Acker. Sie bewegt ein Rindvieh wenn auf den Acker geklickt wird und
+ * verändert den Status der Buttons.
+ * Sie Implementiert das Interface {@link View.OnTouchListener} um einem Acker zugeordnet zu werden.
+ */
 
-    @SuppressLint("ClickableViewAccessibility")
-    public AckerObserver() {
-    }
+public class AckerObserver implements View.OnTouchListener {
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
@@ -28,6 +27,13 @@ public class AckerObserver implements View.OnTouchListener {
         return true;
     }
 
+    /**
+     * Diese Methode wandelt positioniert ein rindvieh auf das angeklickte Ackerfeld und lässt die
+     * Buttons aktualisierten.
+     * Sie überprüft ob die {@link View}
+     * @param v View objekt die Angeklickt wurde (in diesem Fall eine AckerView)
+     * @param event MotionEvent objekt von dem onTouch.
+     */
     private void ackerPressed(View v, MotionEvent event) {
         if(v instanceof AckerView){
             AckerView ackerView = (AckerView) v;
@@ -44,13 +50,12 @@ public class AckerObserver implements View.OnTouchListener {
         Acker acker = v.getAcker();
         int spalte = (int) (x / (v.getWidth() / (float) acker.zaehleSpalten()));
         int zeile = (int) (y / (v.getHeight() / (float) acker.zaehleZeilen()));
-
-        return new Position(spalte, zeile);
+        Position pos = new Position(spalte, zeile);
+        return pos;
     }
 
     private void buttonStatus(AckerView v) {
         View rootView = v.getRootView();
-        Activity c = (Activity) v.getContext();
         Acker acker = v.getAcker();
         Rindvieh kuh = acker.getViecher().get(0);
         if(acker.getViecher().size() == 1){
@@ -60,32 +65,17 @@ public class AckerObserver implements View.OnTouchListener {
 
             // Rauchbutton
             if (acker.istDaGras(kuh.gibPosition())) {
-                c.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
                         buttonGras.setEnabled(true);
                         buttonRauch.setEnabled(true);
                         buttonMilch.setEnabled(false);
-                    }
-                });
             } else if (acker.istDaEinEimer(kuh.gibPosition())) {
-                c.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
                         buttonMilch.setEnabled(true);
                         buttonGras.setEnabled(false);
                         buttonRauch.setEnabled(false);
-                    }
-                });
             } else {
-                c.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
                         buttonMilch.setEnabled(false);
                         buttonGras.setEnabled(false);
                         buttonRauch.setEnabled(false);
-                    }
-                });
             }
         }
 
