@@ -48,14 +48,23 @@ public class HerdenManager {
      */
     private Rindvieh vera;
 
-    private AckerObserver ackerObserver;
-
+    /**
+     *  Der Switch um das Rindvieh zu erstellen bzw. zu vernichten
+     */
     private Switch buttonKuh;
 
+    /**
+     * Der Button um Gras zu fressen
+     */
     private Button buttonGras;
-
+    /**
+     * Der Button um Gras zu rauchen
+     */
     private Button buttonRauchen;
 
+    /**
+     * Der Button um Milch in den Eimer zu geben.
+     */
     private Button buttonMilch;
 
 
@@ -87,7 +96,7 @@ public class HerdenManager {
         acker.lassGrasWachsen(new Position(3, 4));
 
         // Acker Bewegung erstellen
-        ackerObserver = new AckerObserver();
+        AckerObserver ackerObserver = new AckerObserver();
         ackerView.setOnTouchListener(ackerObserver);
     }
 

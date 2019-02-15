@@ -18,7 +18,14 @@ import herdenmanagement.view.AckerView;
  */
 
 public class AckerObserver implements View.OnTouchListener {
-
+    /**
+     * Diese Methode implementiert das Interface {@link View.OnTouchListener} und führt die Methode
+     * {@link ackerPressed} aus.
+     *
+     * @param v {@link View}
+     * @param event {@link MotionEvent}
+     * @return true
+     */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -30,7 +37,6 @@ public class AckerObserver implements View.OnTouchListener {
     /**
      * Diese Methode wandelt positioniert ein rindvieh auf das angeklickte Ackerfeld und lässt die
      * Buttons aktualisierten.
-     * Sie überprüft ob die {@link View}
      *
      * @param v     View objekt die Angeklickt wurde (in diesem Fall eine AckerView)
      * @param event MotionEvent objekt von dem onTouch.
@@ -47,6 +53,14 @@ public class AckerObserver implements View.OnTouchListener {
         }
     }
 
+    /**
+     * Diese Methode gibt das angeklickte Ackerfeld von den gegebenen Koordinaten zurück.
+     *
+     * @param x x-Koordinate des Klicks
+     * @param y y-Koordinate des Klicks
+     * @param v {@link View} auf die geklickt wurde
+     * @return {@link Position} objekt des Angeklickten ackers
+     */
     private Position feldSuchen(float x, float y, AckerView v) {
         Acker acker = v.getAcker();
         int spalte = (int) (x / (v.getWidth() / (float) acker.zaehleSpalten()));
@@ -54,6 +68,12 @@ public class AckerObserver implements View.OnTouchListener {
         Position pos = new Position(spalte, zeile);
         return pos;
     }
+
+    /**
+     * Diese Methode verändert den Status der Buttons je nach Position des auf dem Acker
+     * befindlichen Rindviehs
+     * @param v {@link AckerView} objekt des ackers
+     */
 
     private void buttonStatus(AckerView v) {
         View rootView = v.getRootView();

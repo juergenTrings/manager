@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/titelBar"
-        android:layout_width="0dp"
+        android:layout_width="731dp"
         android:layout_height="60dp"
         android:background="@color/colorPrimaryDark"
         android:elevation="12dp"
@@ -23,9 +23,7 @@
         android:textIsSelectable="false"
         android:textSize="36sp"
         app:autoSizeTextType="none"
-        app:layout_constraintBottom_toTopOf="@+id/acker_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,24 +33,22 @@
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
         android:elevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/milchBtn"
-        app:layout_constraintEnd_toEndOf="@id/titelBar"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/grasBtn"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titelBar">
+        app:layout_constraintTop_toBottomOf="@+id/titelBar"
+        app:layout_constraintVertical_bias="1.0">
 
     </herdenmanagement.view.AckerView>
 
     <Switch
         android:id="@+id/kuhBtn"
         android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
@@ -62,29 +58,29 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/milchBtn" />
+        app:layout_constraintStart_toStartOf="@+id/rauchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/rauchBtn" />
 
     <Button
         android:id="@+id/milchBtn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:elevation="8dp"
         android:enabled="false"
         android:text="@string/milchBtn"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/kuhBtn"
-        app:layout_constraintEnd_toStartOf="@+id/rauchBtn"
-        app:layout_constraintStart_toEndOf="@+id/grasBtn"
-        app:layout_constraintTop_toBottomOf="@+id/acker_view" />
+        app:layout_constraintBottom_toTopOf="@+id/rauchBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/grasBtn"
+        app:layout_constraintTop_toBottomOf="@+id/grasBtn" />
 
     <Button
         android:id="@+id/rauchBtn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
@@ -94,13 +90,13 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/kuhBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/milchBtn"
-        app:layout_constraintTop_toBottomOf="@+id/acker_view" />
+        app:layout_constraintStart_toStartOf="@+id/milchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/milchBtn" />
 
     <Button
         android:id="@+id/grasBtn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -111,9 +107,10 @@
         android:text="@string/grassBtn"
         android:translationZ="8dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/kuhBtn"
-        app:layout_constraintEnd_toStartOf="@+id/milchBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acker_view" />
+        app:layout_constraintBottom_toTopOf="@+id/milchBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/acker_view"
+        app:layout_constraintTop_toBottomOf="@+id/titelBar" />
 
 </android.support.constraint.ConstraintLayout>
