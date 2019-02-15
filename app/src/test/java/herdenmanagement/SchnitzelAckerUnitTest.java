@@ -11,7 +11,6 @@ import java.beans.PropertyChangeListener;
 import herdenmanagement.model.Position;
 import herdenmanagement.model.SchnitzelAcker;
 import herdenmanagement.model.Rindvieh;
-import herdenmanagement.AckerObserver;
 
 public class SchnitzelAckerUnitTest {
 

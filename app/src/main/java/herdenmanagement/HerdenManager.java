@@ -49,31 +49,6 @@ public class HerdenManager {
     private Rindvieh vera;
 
     /**
-     *  Der Observer um die Bewegung der Kuh zu ermöglicht, sowie das Buttonhandlich überwacht bzw. zur Verfügung stellt.
-     */
-    private AckerObserver ackerObserver;
-
-    /**
-     *  Der Switch um das Rindvieh zu erstellen bzw. zu vernichten.
-     */
-    private Switch buttonKuh;
-
-    /**
-     * Der Button um Gras zu fressen.
-     */
-    private Button buttonGras;
-    /**
-     * Der Button um Gras zu rauchen.
-     */
-    private Button buttonRauchen;
-
-    /**
-     * Der Button um Milch in den Eimer zu geben.
-     */
-    private Button buttonMilch;
-
-
-    /**
      * Aufruf zur Erzeugung eines HerdenManagers.
      * Diese Methode lässt zum Beispiel Gras wachsen und stellt Eimer auf.
      * Die Einrichtung des Ackers wird nicht animiert dargestellt.
@@ -101,7 +76,7 @@ public class HerdenManager {
         acker.lassGrasWachsen(new Position(3, 4));
 
         // Acker Bewegung erstellen
-        ackerObserver = new AckerObserver();
+        AckerObserver ackerObserver = new AckerObserver();
         ackerView.setOnTouchListener(ackerObserver);
     }
 
@@ -119,21 +94,21 @@ public class HerdenManager {
     public void manageHerde(final MainActivity mainActivity) {
 
         vera = new Rindvieh("Schmois");
-        buttonKuh = mainActivity.findViewById(R.id.kuhBtn);
-        buttonMilch = mainActivity.findViewById(R.id.milchBtn);
-        buttonGras = mainActivity.findViewById(R.id.grasBtn);
-        buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
+        final Switch switchKuh = mainActivity.findViewById(R.id.kuhBtn);
+        final Button buttonMilch = mainActivity.findViewById(R.id.milchBtn);
+        final Button buttonGras = mainActivity.findViewById(R.id.grasBtn);
+        final Button buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
 
-        buttonKuh.setOnClickListener(
+        switchKuh.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (buttonKuh.isChecked()) {
+                        if (switchKuh.isChecked()) {
                             acker.lassRindWeiden(vera);
-                            buttonKuh.setText(R.string.kuhBtn_on);
+                            switchKuh.setText(R.string.kuhBtn_on);
                         } else {
                             acker.lassRindVerschwinden(vera);
-                            buttonKuh.setText(R.string.kuhBtn_off);
+                            switchKuh.setText(R.string.kuhBtn_off);
                         }
                     }
                 }

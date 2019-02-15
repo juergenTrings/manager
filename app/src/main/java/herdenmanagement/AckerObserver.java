@@ -20,7 +20,7 @@ import herdenmanagement.view.AckerView;
 public class AckerObserver implements View.OnTouchListener {
     /**
      * Diese Methode implementiert das Interface {@link View.OnTouchListener} und führt die Methode
-     * {@link ackerPressed} aus.
+     * {@link #ackerPressed(View, MotionEvent)} aus.
      *
      * @param v {@link View}
      * @param event {@link MotionEvent}
