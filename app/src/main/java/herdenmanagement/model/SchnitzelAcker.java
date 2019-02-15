@@ -41,7 +41,7 @@ public class SchnitzelAcker extends Acker {
 
             while (i < 5) {
                 Position pos = new Position((int) (Math.random() * spaltenMax), (int) (Math.random() * zeilenMax));
-                if (!this.istDaGras(pos) && !this.istDaEinEimer(pos)) {
+                if (!this.istDaGras(pos) && !this.istDaEinEimer(pos) && this.getViecher().get(0).gibPosition() != pos) {
                     this.lassGrasWachsen(pos);
                     i++;
                 }
