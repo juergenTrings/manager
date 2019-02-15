@@ -63,27 +63,27 @@ public class AckerObserver implements View.OnTouchListener {
                 c.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        buttonGras.setVisibility(View.VISIBLE);
-                        buttonRauch.setVisibility(View.VISIBLE);
-                        buttonMilch.setVisibility(View.INVISIBLE);
+                        buttonGras.setEnabled(true);
+                        buttonRauch.setEnabled(true);
+                        buttonMilch.setEnabled(false);
                     }
                 });
             } else if (acker.istDaEinEimer(kuh.gibPosition())) {
                 c.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        buttonMilch.setVisibility(View.VISIBLE);
-                        buttonGras.setVisibility(View.INVISIBLE);
-                        buttonRauch.setVisibility(View.INVISIBLE);
+                        buttonMilch.setEnabled(true);
+                        buttonGras.setEnabled(false);
+                        buttonRauch.setEnabled(false);
                     }
                 });
             } else {
                 c.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        buttonMilch.setVisibility(View.INVISIBLE);
-                        buttonGras.setVisibility(View.INVISIBLE);
-                        buttonRauch.setVisibility(View.INVISIBLE);
+                        buttonMilch.setEnabled(false);
+                        buttonGras.setEnabled(false);
+                        buttonRauch.setEnabled(false);
                     }
                 });
             }

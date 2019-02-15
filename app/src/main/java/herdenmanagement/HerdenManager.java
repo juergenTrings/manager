@@ -130,8 +130,8 @@ public class HerdenManager {
                     @Override
                     public void onClick(View v){
                         vera.frissGras();
-                        v.setVisibility(View.INVISIBLE);
-                        buttonRauchen.setVisibility(View.INVISIBLE);
+                        v.setEnabled(false);
+                        buttonRauchen.setEnabled(false);
                         acker.pruefeGras();
                     }
                 }
@@ -142,8 +142,8 @@ public class HerdenManager {
                     @Override
                     public void onClick(View v){
                         vera.raucheGras();
-                        v.setVisibility(View.INVISIBLE);
-                        buttonGras.setVisibility(View.INVISIBLE);
+                        v.setEnabled(false);
+                        buttonGras.setEnabled(false);
                         acker.pruefeGras();
                     }
                 }
@@ -153,7 +153,7 @@ public class HerdenManager {
                     @Override
                     public void onClick(View v){
                         vera.gibMilch();
-                        v.setVisibility(View.INVISIBLE);
+                        v.setEnabled(false);
                     }
                 }
         );
