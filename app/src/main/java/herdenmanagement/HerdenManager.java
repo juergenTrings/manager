@@ -39,7 +39,7 @@ import herdenmanagement.view.AckerView;
 public class HerdenManager {
 
     /**
-     * Acker, auf dem nach Herzenslust geackert werden kasnn.
+     * Acker, auf dem nach Herzenslust geackert werden kann. Mit automatischer Begrasung.
      */
     private SchnitzelAcker acker;
 
@@ -49,16 +49,21 @@ public class HerdenManager {
     private Rindvieh vera;
 
     /**
-     *  Der Switch um das Rindvieh zu erstellen bzw. zu vernichten
+     *  Der Observer um die Bewegung der Kuh zu ermöglicht, sowie das Buttonhandlich überwacht bzw. zur Verfügung stellt.
+     */
+    private AckerObserver ackerObserver;
+
+    /**
+     *  Der Switch um das Rindvieh zu erstellen bzw. zu vernichten.
      */
     private Switch buttonKuh;
 
     /**
-     * Der Button um Gras zu fressen
+     * Der Button um Gras zu fressen.
      */
     private Button buttonGras;
     /**
-     * Der Button um Gras zu rauchen
+     * Der Button um Gras zu rauchen.
      */
     private Button buttonRauchen;
 
@@ -96,7 +101,7 @@ public class HerdenManager {
         acker.lassGrasWachsen(new Position(3, 4));
 
         // Acker Bewegung erstellen
-        AckerObserver ackerObserver = new AckerObserver();
+        ackerObserver = new AckerObserver();
         ackerView.setOnTouchListener(ackerObserver);
     }
 
