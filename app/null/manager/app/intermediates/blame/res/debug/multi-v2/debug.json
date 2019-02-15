@@ -97,6 +97,21 @@
             ]
         },
         {
+            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-port_values-port.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat",
             "map": [
                 {
@@ -124,21 +139,6 @@
                         "startOffsets": "1809",
                         "endColumns": "100",
                         "endOffsets": "1905"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-port_values-port.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-port/values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
                     }
                 }
             ]
@@ -208,33 +208,17 @@
             ]
         },
         {
-            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat",
+            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,1733",
-                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
-                        "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,1806"
-                    }
-                },
-                {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/e6880e9db1acc5bd3f4bb13c42741111/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1811",
-                        "endColumns": "100",
-                        "endOffsets": "1907"
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
                     }
                 }
             ]
@@ -272,17 +256,33 @@
             ]
         },
         {
-            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat",
+            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-zh-rTW/values-zh-rTW.xml",
                     "from": {
-                        "startLines": "2,5,8",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,214,385",
-                        "endLines": "4,7,10",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "209,380,553"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,1733",
+                        "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
+                        "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,1806"
+                    }
+                },
+                {
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/e6880e9db1acc5bd3f4bb13c42741111/res/values-zh-rTW/values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1811",
+                        "endColumns": "100",
+                        "endOffsets": "1907"
                     }
                 }
             ]
@@ -559,21 +559,6 @@
             ]
         },
         {
-            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-v18/values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat",
             "map": [
                 {
@@ -603,6 +588,21 @@
                         "endLines": "10,11,12,13,14,15,16,17,18,22",
                         "endColumns": "59,69,70,71,57,57,105,63,62,12",
                         "endOffsets": "666,736,807,879,937,995,1101,1165,1228,1410"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
                     }
                 }
             ]
@@ -704,21 +704,6 @@
             ]
         },
         {
-            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-h720dp-v13/values-h720dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "66",
-                        "endOffsets": "117"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat",
             "map": [
                 {
@@ -746,6 +731,21 @@
                         "startOffsets": "105,225,331,438,527,628,746,829,909,996,1103,1215,1317,1425,1532,1642,1804,1904",
                         "endColumns": "119,105,106,88,100,117,82,79,86,106,111,101,107,106,109,161,99,84",
                         "endOffsets": "220,326,433,522,623,741,824,904,991,1098,1210,1312,1420,1527,1637,1799,1899,1984"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/theo/.gradle/caches/transforms-2/files-2.1/aeeebd7a700a5ff6208a90b09f69fa90/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
                     }
                 }
             ]

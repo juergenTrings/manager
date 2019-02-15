@@ -113,14 +113,14 @@ public class HerdenManager {
         buttonKuh.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
-                         if(buttonKuh.isChecked()){
-                                acker.lassRindWeiden(vera);
-                                buttonKuh.setText(R.string.kuhBtn_on);
-                         } else {
-                                acker.lassRindVerschwinden(vera);
-                                buttonKuh.setText(R.string.kuhBtn_off);
-                         }
+                    public void onClick(View v) {
+                        if (buttonKuh.isChecked()) {
+                            acker.lassRindWeiden(vera);
+                            buttonKuh.setText(R.string.kuhBtn_on);
+                        } else {
+                            acker.lassRindVerschwinden(vera);
+                            buttonKuh.setText(R.string.kuhBtn_off);
+                        }
                     }
                 }
         );
@@ -128,7 +128,7 @@ public class HerdenManager {
         buttonGras.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         vera.frissGras();
                         v.setEnabled(false);
                         buttonRauchen.setEnabled(false);
@@ -140,7 +140,7 @@ public class HerdenManager {
         buttonRauchen.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         vera.raucheGras();
                         v.setEnabled(false);
                         buttonGras.setEnabled(false);
@@ -151,7 +151,7 @@ public class HerdenManager {
         buttonMilch.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         vera.gibMilch();
                         v.setEnabled(false);
                     }

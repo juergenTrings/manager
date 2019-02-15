@@ -31,14 +31,15 @@ public class AckerObserver implements View.OnTouchListener {
      * Diese Methode wandelt positioniert ein rindvieh auf das angeklickte Ackerfeld und lässt die
      * Buttons aktualisierten.
      * Sie überprüft ob die {@link View}
-     * @param v View objekt die Angeklickt wurde (in diesem Fall eine AckerView)
+     *
+     * @param v     View objekt die Angeklickt wurde (in diesem Fall eine AckerView)
      * @param event MotionEvent objekt von dem onTouch.
      */
     private void ackerPressed(View v, MotionEvent event) {
-        if(v instanceof AckerView){
+        if (v instanceof AckerView) {
             AckerView ackerView = (AckerView) v;
             Acker acker = ackerView.getAcker();
-            if(acker.getViecher().size() == 1){
+            if (acker.getViecher().size() == 1) {
                 Position FeldPos = feldSuchen(event.getX(), event.getY(), ackerView);
                 acker.getViecher().get(0).setzePosition(FeldPos);
                 buttonStatus(ackerView);
@@ -58,24 +59,21 @@ public class AckerObserver implements View.OnTouchListener {
         View rootView = v.getRootView();
         Acker acker = v.getAcker();
         Rindvieh kuh = acker.getViecher().get(0);
-        if(acker.getViecher().size() == 1){
+        if (acker.getViecher().size() == 1) {
             final Button buttonMilch = rootView.findViewById(R.id.milchBtn);
             final Button buttonGras = rootView.findViewById(R.id.grasBtn);
             final Button buttonRauch = rootView.findViewById(R.id.rauchBtn);
 
+            buttonMilch.setEnabled(false);
+            buttonGras.setEnabled(false);
+            buttonRauch.setEnabled(false);
+
             // Rauchbutton
             if (acker.istDaGras(kuh.gibPosition())) {
-                        buttonGras.setEnabled(true);
-                        buttonRauch.setEnabled(true);
-                        buttonMilch.setEnabled(false);
+                buttonGras.setEnabled(true);
+                buttonRauch.setEnabled(true);
             } else if (acker.istDaEinEimer(kuh.gibPosition())) {
-                        buttonMilch.setEnabled(true);
-                        buttonGras.setEnabled(false);
-                        buttonRauch.setEnabled(false);
-            } else {
-                        buttonMilch.setEnabled(false);
-                        buttonGras.setEnabled(false);
-                        buttonRauch.setEnabled(false);
+                buttonMilch.setEnabled(true);
             }
         }
 
