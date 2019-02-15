@@ -11,6 +11,7 @@ import herdenmanagement.model.Position;
 
 import herdenmanagement.model.Acker;
 import herdenmanagement.model.Rindvieh;
+import herdenmanagement.model.SchnitzelAcker;
 import herdenmanagement.view.AckerView;
 
 public class AckerObserver implements View.OnTouchListener {

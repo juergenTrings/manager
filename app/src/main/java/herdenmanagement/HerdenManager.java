@@ -10,7 +10,6 @@ import herdenmanagement.model.Acker;
 import herdenmanagement.model.Position;
 import herdenmanagement.model.Rindvieh;
 import herdenmanagement.model.SchnitzelAcker;
-import herdenmanagement.model.SchnitzelRind;
 import herdenmanagement.view.AckerView;
 
 /**
@@ -49,7 +48,7 @@ public class HerdenManager {
      */
     private Rindvieh vera;
 
-    private AckerObserver ackerBewegung;
+    private AckerObserver ackerObserver;
 
     private Switch buttonKuh;
 
@@ -88,8 +87,8 @@ public class HerdenManager {
         acker.lassGrasWachsen(new Position(3, 4));
 
         // Acker Bewegung erstellen
-        ackerBewegung = new AckerObserver();
-        ackerView.setOnTouchListener(ackerBewegung);
+        ackerObserver = new AckerObserver();
+        ackerView.setOnTouchListener(ackerObserver);
     }
 
     /**
@@ -133,6 +132,7 @@ public class HerdenManager {
                         vera.frissGras();
                         v.setVisibility(View.INVISIBLE);
                         buttonRauchen.setVisibility(View.INVISIBLE);
+                        acker.pruefeGras();
                     }
                 }
         );
@@ -144,6 +144,7 @@ public class HerdenManager {
                         vera.raucheGras();
                         v.setVisibility(View.INVISIBLE);
                         buttonGras.setVisibility(View.INVISIBLE);
+                        acker.pruefeGras();
                     }
                 }
         );
