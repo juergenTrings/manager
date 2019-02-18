@@ -10,13 +10,25 @@ import herdenmanagement.model.Rindvieh;
 import herdenmanagement.model.SchnitzelAcker;
 import herdenmanagement.view.AckerView;
 
-public class SchnitzelOnClickListner implements View.OnClickListener {
+
+/**
+ * Die Klasse die Als Onclicklistner für die Buttons fungiert.
+ */
+public class SchnitzelOnClickListener implements View.OnClickListener {
     private Rindvieh vera;
 
-    public SchnitzelOnClickListner(Rindvieh vera) {
+    /**
+     * Constructor für die Klasse. Zuweisung eines Rindviehs.
+     * @param vera Rindvieh welches auf den Acker gesetzt werden soll.
+     */
+    public SchnitzelOnClickListener(Rindvieh vera) {
         this.vera = vera;
     }
 
+    /**
+     * Verwalten alle Buttons. Wenn der
+     * @param view angeklickte View.
+     */
     @Override
     public void onClick(View view) {
         View mainActivity = view.getRootView();

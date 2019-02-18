@@ -99,11 +99,11 @@ public class HerdenManager {
         final Button buttonGras = mainActivity.findViewById(R.id.grasBtn);
         final Button buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
 
-        SchnitzelOnClickListner schnitzelOnClickListner = new SchnitzelOnClickListner(vera);
+        SchnitzelOnClickListener schnitzelOnClickListener = new SchnitzelOnClickListener(vera);
 
-        switchKuh.setOnClickListener(schnitzelOnClickListner);
-        buttonGras.setOnClickListener(schnitzelOnClickListner);
-        buttonMilch.setOnClickListener(schnitzelOnClickListner);
-        buttonRauchen.setOnClickListener(schnitzelOnClickListner);
+        switchKuh.setOnClickListener(schnitzelOnClickListener);
+        buttonGras.setOnClickListener(schnitzelOnClickListener);
+        buttonMilch.setOnClickListener(schnitzelOnClickListener);
+        buttonRauchen.setOnClickListener(schnitzelOnClickListener);
     }
 }
