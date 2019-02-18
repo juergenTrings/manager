@@ -26,7 +26,11 @@ public class SchnitzelOnClickListener implements View.OnClickListener {
     }
 
     /**
-     * Verwalten alle Buttons. Wenn der
+     * Verwalten alle Buttons.
+     * Kuh Spawnen/entfernen button -> Rindvieh entfernen/auf Acker weiden lassen
+     * Gras button -> Rindvieh Gras fressen lassen
+     * Rauchen button -> Rindvieh Gras rauchen lassen
+     * Milch button -> Rindvieh milch geben lassen
      * @param view angeklickte View.
      */
     @Override

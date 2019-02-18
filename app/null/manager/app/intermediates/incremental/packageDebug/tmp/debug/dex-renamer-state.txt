@@ -1,4 +1,4 @@
-#Fri Feb 15 16:19:35 CET 2019
+#Mon Feb 18 18:20:01 CET 2019
 base.0=/Users/theo/AndroidStudioProjects/Manager/manager/app/null/manager/app/intermediates/dex/debug/mergeExtDexDebug/out
 path.1=classes.dex
 renamed.1=classes2.dex
