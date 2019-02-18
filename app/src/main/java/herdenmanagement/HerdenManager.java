@@ -99,52 +99,11 @@ public class HerdenManager {
         final Button buttonGras = mainActivity.findViewById(R.id.grasBtn);
         final Button buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
 
-        switchKuh.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (switchKuh.isChecked()) {
-                            acker.lassRindWeiden(vera);
-                            switchKuh.setText(R.string.kuhBtn_on);
-                        } else {
-                            acker.lassRindVerschwinden(vera);
-                            switchKuh.setText(R.string.kuhBtn_off);
-                        }
-                    }
-                }
-        );
+        SchnitzelOnClickListner schnitzelOnClickListner = new SchnitzelOnClickListner(mainActivity, vera);
 
-        buttonGras.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        vera.frissGras();
-                        v.setEnabled(false);
-                        buttonRauchen.setEnabled(false);
-                        acker.pruefeGras();
-                    }
-                }
-        );
-
-        buttonRauchen.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        vera.raucheGras();
-                        v.setEnabled(false);
-                        buttonGras.setEnabled(false);
-                        acker.pruefeGras();
-                    }
-                }
-        );
-        buttonMilch.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        vera.gibMilch();
-                        v.setEnabled(false);
-                    }
-                }
-        );
+        switchKuh.setOnClickListener(schnitzelOnClickListner);
+        buttonGras.setOnClickListener(schnitzelOnClickListner);
+        buttonMilch.setOnClickListener(schnitzelOnClickListner);
+        buttonRauchen.setOnClickListener(schnitzelOnClickListner);
     }
 }

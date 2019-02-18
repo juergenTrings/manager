@@ -46,8 +46,8 @@ public class AckerObserver implements View.OnTouchListener {
             AckerView ackerView = (AckerView) v;
             Acker acker = ackerView.getAcker();
             if (acker.getViecher().size() == 1) {
-                Position FeldPos = feldSuchen(event.getX(), event.getY(), ackerView);
-                acker.getViecher().get(0).setzePosition(FeldPos);
+                Position feldPos = feldSuchen(event.getX(), event.getY(), ackerView);
+                acker.getViecher().get(0).setzePosition(feldPos);
                 buttonStatus(ackerView);
             }
         }
