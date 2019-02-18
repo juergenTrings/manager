@@ -11,16 +11,15 @@ import herdenmanagement.model.SchnitzelAcker;
 import herdenmanagement.view.AckerView;
 
 public class SchnitzelOnClickListner implements View.OnClickListener {
-    private MainActivity mainActivity;
     private Rindvieh vera;
 
-    public SchnitzelOnClickListner(MainActivity mainActivity, Rindvieh vera) {
-        this.mainActivity = mainActivity;
+    public SchnitzelOnClickListner(Rindvieh vera) {
         this.vera = vera;
     }
 
     @Override
     public void onClick(View view) {
+        View mainActivity = view.getRootView();
         AckerView ackerView = mainActivity.findViewById(R.id.acker_view);
         Acker acker = ackerView.getAcker();
         SchnitzelAcker schnitzelAcker = (SchnitzelAcker) acker;
