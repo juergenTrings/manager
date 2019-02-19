@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BA herd management</string>
+    <string name="grassBtn">Friss Gras</string>
+    <string name="kuhBtn">Kuh Ja/Nein</string>
+    <string name="kuhBtn_off">Kuh Beleben</string>
+    <string name="kuhBtn_on">Kuh entfernen</string>
+    <string name="milchBtn">Milch geben</string>
+    <string name="rauchBtn">Gras rauchen</string>
+    <string name="rindvieh_erst_fressen">%1$s steht da und schüttelt den Kopf: Ich muss erst essen!</string>
+    <string name="rindvieh_hinter_mir_kein_acker">%1$s steht da und schüttelt den Kopf: Da ist kein Feld hinter Mir!</string>
+    <string name="rindvieh_kein_eimer">%1$s steht da und schüttelt den Kopf: Da ist kein Eimer!</string>
+    <string name="rindvieh_kein_gras">%1$s steht da und schüttelt den Kopf: Da ist kein Gras</string>
+    <string name="rindvieh_nix_acker">%1$s brüllt wie am Spieß: Da ist kein Acker!</string>
+    <string name="rindvieh_nix_zu_rauchen">%1$s steht da und schüttelt den Kopf: Es gint hier nichts zum rauchen!</string>
+    <string name="rindvieh_vor_mir_kein_acker">%1$s steht da und schüttelt den Kopf: Da seind keine Felder vor mir!</string>
+    <string name="titel">Herdenmanagemente</string>
+</resources>
