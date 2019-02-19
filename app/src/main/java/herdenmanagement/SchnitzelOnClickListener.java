@@ -37,14 +37,13 @@ public class SchnitzelOnClickListener implements View.OnClickListener {
     public void onClick(View view) {
         View mainActivity = view.getRootView();
         AckerView ackerView = mainActivity.findViewById(R.id.acker_view);
-        Acker acker = ackerView.getAcker();
-        SchnitzelAcker schnitzelAcker = (SchnitzelAcker) acker;
+        SchnitzelAcker schnitzelAcker = (SchnitzelAcker) ackerView.getAcker();
 
         switch (view.getId()) {
             case R.id.kuhBtn:
                 Switch buttonKuh = (Switch) view;
                 if (buttonKuh.isChecked()) {
-                    acker.lassRindWeiden(vera);
+                    schnitzelAcker.lassRindWeiden(vera);
                     buttonKuh.setText(R.string.kuhBtn_on);
                 } else {
                     schnitzelAcker.lassRindVerschwinden(vera);

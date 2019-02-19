@@ -1,7 +1,6 @@
 package herdenmanagement;
 
 import android.annotation.SuppressLint;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 
@@ -69,11 +68,7 @@ public class HerdenManager {
 
         // Acker befüllen
         acker.lassGrasWachsen(new Position(1, 1));
-        acker.stelleEimerAuf(new Position(2, 2));
-        acker.lassGrasWachsen(new Position(2, 4));
-        acker.lassGrasWachsen(new Position(2, 5));
-        acker.lassGrasWachsen(new Position(3, 2));
-        acker.lassGrasWachsen(new Position(3, 4));
+        acker.stelleEimerAuf(new Position(4, 6));
 
         // Acker Bewegung erstellen
         AckerObserver ackerObserver = new AckerObserver();
@@ -99,8 +94,10 @@ public class HerdenManager {
         final Button buttonGras = mainActivity.findViewById(R.id.grasBtn);
         final Button buttonRauchen = mainActivity.findViewById(R.id.rauchBtn);
 
+        // onClickListener für die Buttons erstellen.
         SchnitzelOnClickListener schnitzelOnClickListener = new SchnitzelOnClickListener(vera);
 
+        // onClickListener zu den Buttons zuordnen.
         switchKuh.setOnClickListener(schnitzelOnClickListener);
         buttonGras.setOnClickListener(schnitzelOnClickListener);
         buttonMilch.setOnClickListener(schnitzelOnClickListener);

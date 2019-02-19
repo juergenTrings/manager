@@ -21,7 +21,7 @@ public class SchnitzelAcker extends Acker {
      * @param rind objekt der Klasse {@link Rindvieh}
      */
     public void lassRindVerschwinden(Rindvieh rind) {
-        List<Rindvieh> viecher = getViecher();
+        List<Rindvieh> viecher = this.getViecher();
         int pos = viecher.indexOf(rind);
         if (pos != -1) {
             viecher.remove(pos);
